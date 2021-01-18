@@ -101,7 +101,7 @@ MD-Introduce
 **九、代码**
 
 ```
-​```
+ ```
  function fun(){
 
          echo "这是一句非常牛逼的代码";
@@ -109,9 +109,8 @@ MD-Introduce
     }
 
     fun();
-​```
+ ```
 ```
 
 
 
-![img](D:\youdaobiji\jerryy00@163.com\27b5234d192642c68a8d76fa679a37f9\clipboard.png)
