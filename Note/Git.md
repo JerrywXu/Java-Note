@@ -1,4 +1,4 @@
-# Git
+# Git11
 
 git add . //git会自动查找变更过的文件然后提交到暂存区
 
@@ -18,9 +18,24 @@ git rebase --abort//会放弃合并，回到rebase操作之前的状态，之前
 
 git merge --no-ff -m "merge with no-ff" dev //合并分支时，加上`--no-ff`参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而`fast forward`合并就看不出来曾经做过合并。
 
+git branch -r //查看远程分支
 
+git branch //查看本地分支
+
+git push origin --delete tmp //删除远程分支tmp
+
+git checkout dev //切换到dev分支（删除分支前先切换到其他分支）
+
+git branch -D tmp //删除本地tmp分支
+
+git push -u orign dev //推向远程dev分支
+
+git checkout -b dev //创建并切换到分支
+
+**  流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1
 
 * 企业开发一般来说先pull远程dev节点下的数据到本地与本地dev分支上的数据进行merge，有冲突解决冲突，没有冲突则merge后再push到远程dev节点
+* 注意本地节点必须与远程节点对应上才能往上推，否则出错，merge完成以后记得删除分支
 
 
 
