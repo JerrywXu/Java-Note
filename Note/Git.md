@@ -1,4 +1,4 @@
-# Git
+# Git6666
 
 git add . //git会自动查找变更过的文件然后提交到暂存区
 
@@ -34,10 +34,21 @@ git checkout -b dev //创建并切换到分支
 
 git merge dev //在主节点merge   dev节点
 
+git log --oneline --graph --decorate --all   //git 命令代替gitk查看节点树
+
 **  流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1
 
 * 企业开发一般来说先pull远程dev节点下的数据到本地与本地dev分支上的数据进行merge，有冲突解决冲突，没有冲突则merge后再push到远程dev节点
+
 * 注意本地节点必须与远程节点对应上才能往上推，否则出错，merge完成以后记得删除分支
+
+  
+
+  **git config --global pull.rebase true  //这个配置就是告诉git在每次pull前先进行rebase操作。**
+
+  ![image-20210122175709834](img/image-20210122175709834.png)
+
+  **使用git pull --rebase命令，如果没有冲突,则会直接合并，如果存在冲突，手动解决冲突即可，不会再产生那条多余的信息。如果你不想每次都rebase，可以在git bash里执行。比如远程仓库有改动但是你的本地仓库没改  拉下来后commit   然后与你本地dev下的项目add 然后commit  然后到主节点merge会有冲突所以要加上rebase命令  **
 
 
 
