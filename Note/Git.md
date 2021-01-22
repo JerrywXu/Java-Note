@@ -26,11 +26,13 @@ git push origin --delete tmp //删除远程分支tmp
 
 git checkout dev //切换到dev分支（删除分支前先切换到其他分支）
 
-git branch -D tmp //删除本地tmp分支
+git branch -d tmp //删除本地tmp分支
 
-git push -u orign dev //推向远程dev分支
+git push -u orign dev //推向远程dev分支git
 
 git checkout -b dev //创建并切换到分支
+
+git merge dev //在主节点merge   dev节点
 
 **  流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1
 
