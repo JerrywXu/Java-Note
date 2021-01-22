@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 # Git
-=======
-# Git6666555
->>>>>>> 16d375e (merge)
-
 git add . //git会自动查找变更过的文件然后提交到暂存区
 
 git commit -m '描述'  //提交到本地仓库
@@ -100,5 +95,19 @@ rebase：把分叉的提交历史“整理”成一条直线，看上去更直�
 
 fetch：使用git fetch更新代码，本地的库中master的commitID不变，还是等于1。但是与git上面关联的那个orign/master的commit ID变成了2。这时候我们本地相当于存储了两个代码的版本号，我们还要通过merge去合并这两个不同的代码版本，如果这两个版本都修改了同一处的代码，这时候merge就会出现冲突，然后我们解决冲突之后就生成了一个新的代码版本。
 
-![(img/image-20210121215850419.png)
 
+
+# git push -u origin master
+To https://github.com/XXX/XXX.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/XXX/XXX.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+
+解决方法
+
+先把git的东西fetch到你本地属于自己的分支然后rebase后再push,能用rebase就不要用merge
