@@ -20,6 +20,10 @@ git merge --no-ff -m "merge with no-ff" dev //合并分支时，加上`--no-ff`�
 
 
 
+* 企业开发一般来说先pull远程dev节点下的数据到本地与本地dev分支上的数据进行merge，有冲突解决冲突，没有冲突则merge后再push到远程dev节点
+
+
+
 git 密钥问题 ssh
 
 # 创建删除远程分支（用于远程仓库创建错了的问题）
