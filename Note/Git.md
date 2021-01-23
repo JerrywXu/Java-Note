@@ -35,7 +35,7 @@ git merge dev //在主节点merge   dev节点
 
 git log --oneline --graph --decorate --all   //git 命令代替gitk查看节点树
 
-**  流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1
+**流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1**
 
 * 企业开发一般来说先pull远程dev节点下的数据到本地与本地dev分支上的数据进行merge，有冲突解决冲突，没有冲突则merge后再push到远程dev节点
 
