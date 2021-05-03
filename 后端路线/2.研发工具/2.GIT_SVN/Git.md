@@ -1,4 +1,12 @@
 # Git
+git添加远程仓库
+
+https://www.jianshu.com/p/750527980651
+
+```
+$ git remote add origin https://github.com/fengcangjun/learngit.git
+```
+
 git add . //git会自动查找变更过的文件然后提交到暂存区
 
 git commit -m '描述'  //提交到本地仓库
@@ -34,6 +42,8 @@ git checkout -b dev //创建并切换到分支
 git merge dev //在主节点merge   dev节点
 
 git log --oneline --graph --decorate --all   //git 命令代替gitk查看节点树
+
+
 
 **流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1**
 
@@ -97,8 +107,8 @@ fetch：使用git fetch更新代码，本地的库中master的commitID不变，�
 
 
 
-# git push -u origin master
-To https://github.com/XXX/XXX.git
+# git push （-u） origin master
+报错信息 ：To https://github.com/XXX/XXX.git
  ! [rejected]        master -> master (non-fast-forward)
 error: failed to push some refs to 'https://github.com/XXX/XXX.git'
 hint: Updates were rejected because the tip of your current branch is behind
