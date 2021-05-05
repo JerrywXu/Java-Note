@@ -1,4 +1,6 @@
 # Git
+git init 初始化仓库
+
 git添加远程仓库
 
 https://www.jianshu.com/p/750527980651
