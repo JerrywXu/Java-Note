@@ -123,3 +123,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 解决方法
 
 先把git的东西fetch到你本地属于自己的分支然后rebase后再push,能用rebase就不要用merge
+
+# git的撤销与回滚
+
+https://www.cnblogs.com/songgj/p/8965580.html
+
