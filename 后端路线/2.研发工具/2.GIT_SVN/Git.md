@@ -45,6 +45,8 @@ git merge dev //在主节点merge   dev节点
 
 git log --oneline --graph --decorate --all   //git 命令代替gitk查看节点树
 
+git log //查看git操作日志
+
 git pull --rebase origin master  //pull=fetch+merge解决本地和远程仓库代码不一致的问题
 
 **流程在dev上新建一个属于自己的分支dev1 在此分支上添加自己的代码，切换到dev从远程pull 然后与dev1进行merge  $git merge dev1  然后$git push -u origin dev 然后$git branch -D dev1**
