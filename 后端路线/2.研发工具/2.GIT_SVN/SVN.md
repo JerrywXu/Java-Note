@@ -1,6 +1,6 @@
 [![logo](img/favicon.png)](https://svnbucket.com/posts/)
 
-# svn常用命令
+# svn常用命令(代码提交时记得更新)
 
 svn的命令通常都很少用，在windows上，我们通常都是使用图形化的操作界面，例如 TortoiseSVN 提供了很好的图形化操作界面，上手简单方便。
 但是有时候我们需要在服务器这类没有图形化操作界面的机器上使用svn，这时候我们就需要用到svn的命令来操作了。
